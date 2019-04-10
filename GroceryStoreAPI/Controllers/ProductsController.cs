@@ -23,7 +23,8 @@ namespace GroceryStoreAPI.Controllers
         }
 
         // GET: api/Products/5
-        [Route("{id:int}")]
+        [Route("~/api/Products/{id:int}")]
+        [HttpGet]
         [ResponseType(typeof(Product))]
         public IHttpActionResult GetProduct(int id)
         {
